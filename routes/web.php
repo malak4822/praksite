@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/aa', function () {
     return view('welcome');
 });
+
+Route::get('/', [UserController::class, 'function1']);
+
+Route::get('/podstrona{id}', function($id){
+    $id = $id+100;
+    return "u have $id, i added 100 to it ofc";
+    
+})->where("id", "[0-9]+");
