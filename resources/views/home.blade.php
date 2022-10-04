@@ -10,7 +10,7 @@
 
 <body>
 
-    <h1>HomePage suko</h1>
+    <h1>Strona jest taka owaka</h1>
 </body>
 
 </html>

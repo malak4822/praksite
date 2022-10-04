@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +15,8 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/aa', function () {
-    return view('welcome');
+Route::get("/", [UserController::class, "function1"]);
+
+Route::get("/site1", function (Request $zapytanie) {
+    return dd($zapytanie->user . " " . $zapytanie->password);
 });
-
-Route::get('/', [UserController::class, 'function1']);
-
-Route::get('/podstrona{id}', function($id){
-    $id = $id+100;
-    return "u have $id, i added 100 to it ofc";
-    
-})->where("id", "[0-9]+");
