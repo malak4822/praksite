@@ -9,14 +9,6 @@
 </head>
 
 <body>
-    <h1>
-        <a href="">
-            <?php foreach ($lista as $czlowiek) :
-                echo $czlowiek['imie'] . " | wiek-> "
-                . $czlowiek['wiek'] . "<br>";
-            endforeach;
-            ?></a>
-    </h1>
 </body>
 
 </html>

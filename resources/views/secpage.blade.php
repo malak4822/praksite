@@ -10,10 +10,6 @@
 
 <body>
 
-    <a href="/my-site/public"><h1>{{$czlowiek["imie"]}}</h1></a>
-    <h3>{{$czlowiek["wiek"]}}</h3>
-    <p>{{$czlowiek["opis"]}}</p>
-
 </body>
 
 </html>

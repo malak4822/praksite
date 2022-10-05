@@ -1,7 +1,7 @@
 <?php
 
-use App\Models\Listing;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,17 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/", function () {
-    return view(
-        "home",
-        [
-            "lista" => Listing::all()
-        ]
-    );
-});
-
-Route::get("/secpage/{id}", function($id){
-    return view("secpage", [
-        "czlowiek" => Listing::find($id)
-    ]);
-});
+Route::get("/", [
+    MyController::class, "enterHome",
+]);
