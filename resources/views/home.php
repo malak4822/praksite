@@ -12,7 +12,7 @@
     <h1>
         <a href="">
             <?php foreach ($lista as $czlowiek) :
-                echo $czlowiek['imie']
+                echo $czlowiek['imie'] . " | wiek-> "
                 . $czlowiek['wiek'] . "<br>";
             endforeach;
             ?></a>

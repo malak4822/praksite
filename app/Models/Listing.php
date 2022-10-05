@@ -34,7 +34,7 @@ class Listing
     public static function find($id)
     {
         $ludzie = self::all();
-
+ 
         foreach ($ludzie as $czlowiek) {
             if ($czlowiek["id"] == $id)
                 return $czlowiek;
