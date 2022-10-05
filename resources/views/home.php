@@ -9,30 +9,14 @@
 </head>
 
 <body>
-    <?php
-    if (count($ludzie) == 0) {
-        echo "nie ma nic w liscie";
-    } elseif (count($ludzie) == 1) {
-        echo "są 1 dane w liście";
-        foreach ($ludzie as $czlowiek) : {
-                echo $czlowiek["imie"];
-            }
-        endforeach;
-    } elseif (count($ludzie) == 2) {
-        echo "są 2 dane w liście i brzmią tak :" . "<br>";
-        foreach ($ludzie as $czlowiek) : {
-                echo $czlowiek["imie"]
-                    . "<br>" .
-                    $czlowiek["wiek"]
-                    . "<br>" .
-                    $czlowiek["opis"]
-                    . "<br>";
-            }
-        endforeach;
-    } elseif (count($ludzie) == 3) {
-        echo "są 3 dane w liście";
-    }
-    ?>
+    <h1>
+        <a href="">
+            <?php foreach ($lista as $czlowiek) :
+                echo $czlowiek['imie']
+                . $czlowiek['wiek'] . "<br>";
+            endforeach;
+            ?></a>
+    </h1>
 </body>
 
 </html>

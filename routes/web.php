@@ -1,9 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
-
+use App\Models\Listing;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +13,17 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get("/", [UserController::class, "function1"]);
+Route::get("/", function () {
+    return view(
+        "home",
+        [
+            "lista" => Listing::all()
+        ]
+    );
+});
+
+Route::get("/secpage/{id}", function($id){
+    return view("secpage", [
+        "czlowiek" => Listing::find($id)
+    ]);
+});
