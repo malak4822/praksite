@@ -16,7 +16,3 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get("/", [UserController::class, "function1"]);
-
-Route::get("/site1", function (Request $zapytanie) {
-    return dd($zapytanie->user . " " . $zapytanie->password);
-});
