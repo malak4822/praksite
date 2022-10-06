@@ -6,17 +6,12 @@ class MyController extends Controller
 {
     public static function enterHome()
     {
-
-        return view(
-            "home",
-            [
-                "auta" => array(
-                    array("Volvo", 22, 18),
-                    array("BMW", 15, 13),
-                    array("Saab", 5, 2),
-                    array("Land Rover", 17, 15)
-                ),
-            ]
-        );
+        return (array
+        (
+            array("Bartek", 22, 184),
+            array("Marek", 15, 156),
+            array("Adrian", 5, 189),
+            array("Józek", 17, 138),
+        ));
     }
 }

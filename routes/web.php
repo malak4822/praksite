@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MyController;
+use App\Models\Ludzie;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,14 @@ use App\Http\Controllers\MyController;
 |
 */
 
-Route::get("/", [
-    MyController::class, "enterHome",
-]);
+Route::get("/", function () {
+    return view("home", [
+        "ludzie" => Ludzie::people()
+    ]);
+});
+
+Route::get("/user/{id}", function ($id) {
+    return view("users", [
+        "czlowiek" => Ludzie::find($id),
+    ]);
+});
