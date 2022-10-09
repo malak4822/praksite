@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Ludzie;
+use App\Http\Controllers\MyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +16,7 @@ use App\Models\Ludzie;
 
 Route::get("/", function () {
     return view("home", [
-        "ludzie" => Ludzie::people()
+        "ludzie" => Ludzie::all()
     ]);
 });
 
