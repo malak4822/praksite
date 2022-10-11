@@ -13,4 +13,4 @@
             <h2>W liście elementów brak</h2>
         @endunless
     </h2>
-@endsection
+@stop

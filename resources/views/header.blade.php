@@ -1,15 +1,5 @@
-<header>
+@extends('layout')
 
-    <div>
-        <div class="topButton"></div>
-        <div class="topButton"></div>
-        <div class="topButton"></div>
-    </div>
-
-    <div>
-        <div class="topButton"></div>
-        <div class="topButton"></div>
-        <div class="topButton"></div>
-    </div>
-
-</header>
+@section('header_1')
+    <h1> naglowweeek </h1>
+@stop
