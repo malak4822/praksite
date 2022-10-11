@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('section_1')
+@section('content')
     <h1>Użytkownicy :</h1>
     <h2>
         @unless(count($ludzie) == 0)
