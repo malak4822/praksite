@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Użytkownicy</title>
-</head>
-
-<body>
-
+@section('section_2')
     <h1> Imie to {{ $czlowiek['imie'] }}
         a wzrost to {{ $czlowiek['wzrost'] }}</h1>
 
     <h2>Wzrost to {{ $czlowiek['wiek'] }}</h2>
-
-
-
-
-</body>
-
-</html>
+@endsection

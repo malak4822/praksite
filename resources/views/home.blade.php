@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona Główna</title>
-</head>
-
-<body>
+@section('section_1')
     <h1>Użytkownicy :</h1>
     <h2>
         @unless(count($ludzie) == 0)
@@ -21,7 +13,4 @@
             <h2>W liście elementów brak</h2>
         @endunless
     </h2>
-
-</body>
-
-</html>
+@endsection
