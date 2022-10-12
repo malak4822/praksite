@@ -28,9 +28,9 @@ button:hover {
 
 .tile {
     text-align: center;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 2px;
-    border-color: white;
+    border-color: white; */
     background-color: rgb(80, 80, 80);
     width: 150px;
     height: 150px;
