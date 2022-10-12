@@ -1,16 +1,20 @@
 @extends('layout')
 
 @section('content')
-    <h1>Użytkownicy :</h1>
-    <h2>
-        @unless(count($ludzie) == 0)
-            <h2>Lista zawiera elementy, oto one :</h2>
 
-            @foreach ($ludzie as $czlowiek)
-                <h3> <a href="user/{{ $czlowiek['id'] }}"> {{ $czlowiek['imie'] }} </a> </h3>
-            @endforeach
-        @else
-            <h2>W liście elementów brak</h2>
-        @endunless
-    </h2>
+    <div class="flex justify-around border-2">
+        <div class="border-2">
+            Site Description
+        </div>
+
+        <div class="border-2">
+            <div class="text-center">
+                Events Information
+            </div>
+
+            <button class="p-12">
+                Event Outline
+            </button>
+        </div>
+    </div>
 @stop
