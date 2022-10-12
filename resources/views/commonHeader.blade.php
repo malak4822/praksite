@@ -1,11 +1,22 @@
-<header class="flex auto bg-stone-700 text-white grid">
+<script>
+    function showSearchBar() {
+        var x = document.getElementById("searchBar");
+        if (x.style.display == "none") {
+            x.style.display == "block"
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+<header class="bg-stone-700 text-white grid">
 
 
     <div>
-        <img class="" src="logotype.png" alt="logo"></img>
+        <img src="logotype.png" alt="logo"></img>
     </div>
 
-    <button>Search</button>
+    <button onclick="showSearchBar()">Search</button>
 
     <button>Ranking</button>
 
@@ -18,6 +29,7 @@
     <button>Notification</button>
 
     <button>My Page</button>
+
 
 
 </header>

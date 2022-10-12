@@ -25,3 +25,14 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
 }
+
+.tile {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    background-color: rgb(80, 80, 80);
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
