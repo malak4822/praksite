@@ -11,7 +11,7 @@
         Ranking
     </button>
 
-    <div></div>
+    <div class="text-center">Common Header</div>
 
     <button>
         Submit
