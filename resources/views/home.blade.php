@@ -2,7 +2,7 @@
 
 @section('topHeader')
 
-    <div class="flex justify-around ">
+    <div class="flex justify-around border-2">
         <div class="">
             Site Description
         </div>
