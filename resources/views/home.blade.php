@@ -2,12 +2,12 @@
 
 @section('topHeader')
 
-    <div class="flex justify-around border-2">
-        <div class="border-2">
+    <div class="flex justify-around ">
+        <div class="">
             Site Description
         </div>
 
-        <div class="border-2">
+        <div class="">
             <div class="text-center">
                 Events Information
             </div>
