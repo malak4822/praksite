@@ -1,26 +1,24 @@
-<header class="bg-stone-700 grid content-center flex-end">
+<header class="bg-stone-700 flex justify-end m-auto text-white ">
 
-    <img class="logo" src="logotype.png" alt="logo"></img>
+    <img class="logo mr-auto" src="logotype.png" alt="logo"></img>
 
-    <button class="bg-green-400 hover:bg-green-500 text-white font-bold py-4  px-2">
+    <button>
         Search
     </button>
 
-    <button class="bg-green-400 hover:bg-green-500 text-white font-bold py-4 px-2">
+    <button>
         Ranking
     </button>
 
-    <div></div>
-
-    <button class="bg-green-400 hover:bg-green-500 text-white font-bold py-4 px-2">
+    <button>
         Submit
     </button>
 
-    <button class="bg-green-400 hover:bg-green-500 text-white font-bold py-4 px-2">
+    <button>
         Notification
     </button>
 
-    <button class="bg-green-400 hover:bg-green-500 text-white font-bold py-4 px-2">
-        My_Page
+    <button>
+        My Page
     </button>
 </header>
