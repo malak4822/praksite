@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    @include('header')
-    @yield('content')
+    @include('commonHeader')
+    @yield('topHeader')
+    @include('contentList')
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('content')
+@section('topHeader')
 
     <div class="flex justify-around border-2">
         <div class="border-2">
