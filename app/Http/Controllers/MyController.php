@@ -7,7 +7,7 @@ class MyController extends Controller
     public static function enterHome()
     {
         return (
-            view("home")
+            view("layout")
         );
     }
 }

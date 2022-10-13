@@ -14,14 +14,13 @@ use App\Http\Controllers\MyController;
 |
 */
 
-Route::get("/", function () {
-    return view("home", [
-        "ludzie" => Ludzie::all()
-    ]);
-});
-
 Route::get("/user/{id}", function ($id) {
     return view("users", [
         "czlowiek" => Ludzie::find($id),
     ]);
 });
+
+Route::get("/", [
+    MyController::class, "enterHome",
+    "ludzie" => Ludzie::all(),
+]);

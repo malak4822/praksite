@@ -5,6 +5,7 @@
              <img src="cathumb.jpg" alt="cat1"></img>
          </div>
          Kitty num 1
+      
      </div>
 
      <div class="tile">

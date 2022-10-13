@@ -24,8 +24,6 @@ class DatabaseSeeder extends Seeder
 
         //  \App\Models\User::factory(3)->create();
 
-        Ludzie::factory(5)->create();
-
 
         // Ludzie::factory(3)->create();
         // Ludzie::create(

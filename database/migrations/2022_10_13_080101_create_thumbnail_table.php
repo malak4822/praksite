@@ -13,13 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ludzie', function (Blueprint $table) {
+        Schema::create('thumbnailContent', function (Blueprint $table) {
             $table->id();
-            $table->string("imie");
-            $table->string("nazwisko");
-            $table->integer("wiek");
-            $table->double("wzrost");
-            $table->boolean("autyzm");
+            $table->text('thumbnailURL');
+            $table->text('author');
+            $table->string("submitted by");
+            $table->timestamps();
         });
     }
 
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ludzie');
+        Schema::dropIfExists('thumbnail');
     }
 };
