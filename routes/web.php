@@ -15,12 +15,9 @@ use App\Http\Controllers\MyController;
 */
 
 Route::get("/user/{id}", function ($id) {
-    return view("users", [
-        "czlowiek" => Ludzie::find($id),
-    ]);
+    return view("users", []);
 });
 
 Route::get("/", [
     MyController::class, "enterHome",
-    "ludzie" => Ludzie::all(),
 ]);

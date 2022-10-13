@@ -11,11 +11,14 @@
 </head>
 
 <body>
+
     @include('commonHeader')
     @include('searchbar')
     @yield('topHeader')
     @include('contentList')
     @include('footer')
+    {{$srata}}
+
 </body>
 
 </html>
