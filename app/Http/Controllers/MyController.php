@@ -10,12 +10,7 @@ class MyController extends Controller
     public static function enterHome()
     {
         // WYŚWIETLANIE KOLUMN KOLUMN KOLUMN 
-        $kolumnauthora = DB::table('thumbnailcontent')->pluck('author');
-
-        // WYŚWIETLANIE WIERSZY WIERSZY WIERSZY
-
-
-       
+        $kolumnauthora = DB::table('thumbnailContent')->pluck('author');
 
         return (view("layout", [
             "kolumnas" => $kolumnauthora,

@@ -18,7 +18,7 @@ class ThumbNailFactory extends Factory
     {
         return [
             'author' => fake()->name(),
-            'thumbnailURL' => 'https://image.shutterstock.com/image-photo/kitten-head-paws-peeking-over-260nw-1869172456.jpg', // password
+            'thumbnailURL' => fake()->imageUrl(), // password
             'submitted_by' => "submitted by",
         ];
     }

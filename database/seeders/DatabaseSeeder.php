@@ -17,13 +17,40 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-
-        DB::table('thumbnailcontent')->insert([
+        //                  1
+        DB::table('thumbnailContent')->insert([
             'author' => fake()->name(),
-            'thumbnailURL' => 'https://image.shutterstock.com/image-photo/kitten-head-paws-peeking-over-260nw-1869172456.jpg', // password
-            'submitted_by' => "submitted_by",
+            'thumbnailURL' => fake()->imageUrl(), // password
+            'submitted_by' => "submitted by",
         ]);
 
+        //                  2
+        DB::table('thumbnailContent')->insert([
+            'author' => fake()->name(),
+            'thumbnailURL' => fake()->imageUrl(), // password
+            'submitted_by' => "submitted by",
+        ]);
+
+        //                  3
+        DB::table('thumbnailContent')->insert([
+            'author' => fake()->name(),
+            'thumbnailURL' => fake()->imageUrl(), // password
+            'submitted_by' => "submitted by",
+        ]);
+
+        //                  4
+        DB::table('thumbnailContent')->insert([
+            'author' => fake()->name(),
+            'thumbnailURL' => fake()->imageUrl(), // password
+            'submitted_by' => "submitted by",
+        ]);
+
+        //                  5
+        DB::table('thumbnailContent')->insert([
+            'author' => fake()->name(),
+            'thumbnailURL' => fake()->imageUrl(), // password
+            'submitted_by' => "submitted by",
+        ]);
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
