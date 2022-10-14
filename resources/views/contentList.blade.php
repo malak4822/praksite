@@ -2,20 +2,19 @@
     <div class="flex justify-center auto w-9/10 mx-auto">
 
         <div class="tile">
-            <div class="tileinside">
-                <img src="{{ $wiersze->thumbnailURL }}" alt="cat1"></img>
-            </div>
-
-
             <?php
+            $user = DB::table('thumbnailcontent')->find(2);
+            
+            echo "<img src=$user->thumbnailURL></img>";
             
             // WYŚWIETLANIE KOLUMNY KOLUMNY KOLUMNY
             //  foreach ($kolumnas as $kolumna) {
             //      echo $kolumna;
             //  }
-            $idNum = 2;
-            echo $wiersze->author;
+            
             // WYŚWIETLANIE WIERSZY WIERSZY WIERSZY
+            echo $user->author;
+            
             ?>
 
 
@@ -27,8 +26,8 @@
                 <img src="cathumb.jpg" alt="cat2"></img>
             </div>
             <?php
-            $idNum = 3;
-            echo $wiersze->author;
+            $user = DB::table('thumbnailcontent')->find(2);
+            echo $user->author;
             ?>
         </div>
 
@@ -36,14 +35,20 @@
             <div class="tileinside">
                 <img src="cathumb.jpg" alt="cat3"></img>
             </div>
-            Kitty num 3
+            <?php
+            $user = DB::table('thumbnailcontent')->find(3);
+            echo $user->author;
+            ?>
         </div>
 
         <div class="tile">
             <div class="tileinside">
                 <img src="cathumb.jpg" alt="cat4"></img>
             </div>
-            Kitty num 4
+            <?php
+            $user = DB::table('thumbnailcontent')->find(4);
+            echo $user->author;
+            ?>
         </div>
 
         <div class="tile">

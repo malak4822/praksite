@@ -13,18 +13,12 @@ class MyController extends Controller
         $kolumnauthora = DB::table('thumbnailcontent')->pluck('author');
 
         // WYŚWIETLANIE WIERSZY WIERSZY WIERSZY
-        $idk = 1;
 
-        while ($idk < 3) {
-             $idk++;
-        }
 
-        $user = DB::table('thumbnailcontent')->find($idk);
+       
 
         return (view("layout", [
             "kolumnas" => $kolumnauthora,
-            "idNum" => $idk,
-            "wiersze" => $user,
         ])
         );
     }
