@@ -3,8 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\Ludzie;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,6 +18,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
+        DB::table('thumbnailcontent')->insert([
+            'author' => fake()->name(),
+            'thumbnailURL' => 'https://image.shutterstock.com/image-photo/kitten-head-paws-peeking-over-260nw-1869172456.jpg', // password
+            'submitted_by' => "submitted_by",
+        ]);
+
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
@@ -24,8 +32,8 @@ class DatabaseSeeder extends Seeder
 
         //  \App\Models\User::factory(3)->create();
 
-            
-            
+
+
         // Ludzie::factory(3)->create();
         // Ludzie::create(
         //     [

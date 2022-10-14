@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->text('thumbnailURL');
             $table->text('author');
-            $table->string("submitted by");
+            $table->string("submitted_by");
             $table->timestamps();
         });
     }

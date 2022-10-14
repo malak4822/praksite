@@ -19,5 +19,7 @@ Route::get("/user/{id}", function ($id) {
 });
 
 Route::get("/", [
+
     MyController::class, "enterHome",
+    "dwdw" => 2,
 ]);

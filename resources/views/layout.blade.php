@@ -17,7 +17,6 @@
     @yield('topHeader')
     @include('contentList')
     @include('footer')
-    {{$srata}}
 
 </body>
 
