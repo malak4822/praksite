@@ -13,9 +13,11 @@
 <body>
 
     @include('commonHeader')
-    @include('searchbar')
-    @yield('topHeader')
-    @include('contentList')
+    <div class="box">
+        @include('searchbar')
+        @yield('topHeader')
+        @include('contentList')
+    </div>
     @include('footer')
 
 </body>

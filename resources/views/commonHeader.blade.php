@@ -1,18 +1,12 @@
+<header class="bg-white text-white grid">
 
-<header class="bg-stone-700 text-white grid">
-
-
-    <div>
-        <img src="logotype.png" alt="logo"></img>
-    </div>
+    <img class="rounded-full my-auto p-2" src="logotype.png" alt="logo"></img>
 
     <button onclick="showSearchBar()">Search</button>
 
     <button>Ranking</button>
 
-    <div class="text-center">
-        Common Header
-    </div>
+    <div></div>
 
     <button>Submit</button>
 
