@@ -14,7 +14,9 @@
     @include('commonHeader')
     <div class="box">
         @include('searchbar')
-        @yield('topHeader')
+        {{-- czym się różni @yield('topHeader') od 
+        @include i czemu nie mogę go używać wszędzie --}}
+        @include('home')
         @include('contentList')
     </div>
     @include('footer')

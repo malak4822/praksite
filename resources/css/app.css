@@ -58,6 +58,11 @@ img.tileinside {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .texty1 {
+        padding: 1rem;
+        font-size: 18px;
+    }
+
     .grid {
         grid-template-columns: 0fr 1fr 1fr 0fr 1fr 1fr 1fr;
     }
@@ -68,6 +73,11 @@ img.tileinside {
     .aea {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .texty1 {
+        padding: 0.3rem;
+        font-size: 15px;
     }
 
     .grid {

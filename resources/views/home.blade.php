@@ -1,20 +1,16 @@
-@extends('layout')
+<div class="flex border-2 m-5">
 
-@section('topHeader')
-
-    <div class="flex justify-around border-2">
-        <div class="">
-            Site Description
-        </div>
-
-        <div class="">
-            <div class="text-center">
-                Events Information
-            </div>
-
-            <button class="p-12">
-                Event Outline
-            </button>
-        </div>
+    <div class="texty1 text-center p-10 w-1/2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
     </div>
-@stop
+
+    <div class="w-1/2 items-center my-auto text-center">
+        <div>
+            Events Information
+        </div>
+
+        <button class="bg-white text-black hover:text-white">
+            Event Outline
+        </button>
+    </div>
+</div>
