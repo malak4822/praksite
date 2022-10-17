@@ -45,14 +45,15 @@ img.tileinside {
     border-radius: 20px;
 }
 
-@media(max-width: 1140px) {
+
+@media(max-width: 1470px) {
     .aea {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
-@media(max-width: 60em) {
+@media(max-width: 1190px) {
     .aea {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -60,7 +61,7 @@ img.tileinside {
 
     .texty1 {
         padding: 1rem;
-        font-size: 18px;
+        font-size: 0.9em;
     }
 
     .grid {
@@ -68,7 +69,7 @@ img.tileinside {
     }
 }
 
-@media(max-width: 40em) {
+@media(max-width: 910px) {
 
     .aea {
         display: grid;
@@ -81,8 +82,22 @@ img.tileinside {
     }
 
     .grid {
-        grid-template-columns: 0fr 1fr 1fr 0fr 1fr 1fr 1fr;
-        display: grid;
         justify-content: center;
+    }
+}
+
+@media(max-width: 910px) {
+
+    .aea {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 630px) {
+
+    .aea {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
