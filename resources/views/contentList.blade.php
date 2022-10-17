@@ -17,7 +17,10 @@
         echo '<div class="tile">' . "<img alt=cat5 class=tileinside src=$user->thumbnailURL ></img>" . $user->submitted_by . '<br>' . $user->author . '</div>';
         ?>
 
-        <div id=visir>
+
+
+        </div>
+        <div id=visir class="w-4/5 grid mx-auto aea bg-neutral-700 p-5">
 
             <?php
             $user = DB::table('thumbnailContent')->find(6);
@@ -40,9 +43,6 @@
             ?>
 
         </div>
-
-        </div>
-
     </div>
 
 
