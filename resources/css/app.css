@@ -29,14 +29,14 @@ button:hover {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .tile {
     text-align: center;
     background-color: rgb(80, 80, 80);
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
     border-radius: 20px;
     min-width: 10rem;
 }
@@ -45,59 +45,6 @@ img.tileinside {
     border-radius: 20px;
 }
 
-
-@media(max-width: 1470px) {
-    .aea {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
-@media(max-width: 1190px) {
-    .aea {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .texty1 {
-        padding: 1rem;
-        font-size: 0.9em;
-    }
-
-    .grid {
-        grid-template-columns: 0fr 1fr 1fr 0fr 1fr 1fr 1fr;
-    }
-}
-
-@media(max-width: 910px) {
-
-    .aea {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .texty1 {
-        padding: 0.3rem;
-        font-size: 15px;
-    }
-
-    .grid {
-        justify-content: center;
-    }
-}
-
-@media(max-width: 910px) {
-
-    .aea {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media(max-width: 630px) {
-
-    .aea {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+.visirstylin{
+    background-color: red;
 }
