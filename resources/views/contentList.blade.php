@@ -1,7 +1,5 @@
-<div class="m-8 mx-auto rounded-lg">
-    <div class="flex justify-center auto w-9/10 mx-auto">
+    <div class="flex mt-3 aea">
         <?php
-        
         $user = DB::table('thumbnailContent')->find(1);
         echo '<div class=tile>' . "<img alt=cat1 class=tileinside src=$user->thumbnailURL ></img>" . $user->submitted_by . '<br>' . $user->author . '</div>';
        
@@ -19,4 +17,3 @@
         ?>
 
     </div>
-</div>

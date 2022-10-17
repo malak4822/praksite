@@ -1,3 +1,3 @@
-<footer class="bg-white p-8 text-black text-center">
+<footer class="bg-white p-8 mt-8 text-black text-center">
     2022 © All rights reserved
 </footer>
