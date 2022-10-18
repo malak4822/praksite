@@ -18,19 +18,37 @@ body {
 button {
     margin: 10px;
     border-radius: 9999px;
-    background-color: #171717;
+    /* background-color: #171717; */
     padding: 10px;
-}
-
-button:hover {
-    background-color: inherit;
     color: black;
 }
+
+/* 
+li:hover {
+    background-color: inherit;
+    color: black;
+} */
 
 .grid {
     display: grid;
     gap: 0.5em;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+li {
+    list-style: none;
+    color: white;
+    background-color: rgb(39, 39, 42);
+    border-radius: 999px;
+    padding: 5px;
+    margin: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+}
+
+li:hover {
+    background-color: inherit;
 }
 
 .tile {
@@ -45,6 +63,38 @@ img.tileinside {
     border-radius: 20px;
 }
 
-.visirstylin{
+.visirstylin {
     background-color: red;
+}
+
+.burger div {
+    margin: 3px;
+    width: 25px;
+    border-radius: 5px;
+    height: 3px;
+    background-color: rgb(80, 80, 80);
+}
+
+/* 1124 and 980 px */
+
+@media screen and (max-width:1040px) {
+    body {}
+
+    .heady {
+        padding: 10px;
+    }
+
+    .aya {
+        display: none;
+        background-color: red;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
 }
