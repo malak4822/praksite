@@ -16,17 +16,18 @@ body {
 }
 
 button {
-    margin: 10px;
-    border-radius: 9999px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    border-radius: 100px;
     background-color: #262626;
-    padding: 10px;
 }
-
 
 button:hover {
     background-color: inherit;
     color: #262626;
-} 
+}
 
 .grid {
     display: grid;
@@ -34,51 +35,20 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-li {
-    list-style: none;
-    color: white;
-    background-color: rgb(39, 39, 42);
-    border-radius: 999px;
-    padding: 5px;
-    margin: 10px;
-    padding-right: 40px;
-    padding-left: 40px;
-    text-align: center;
-}
-
-li:hover {
-    background-color: inherit;
-}
-
-.tile {
-    text-align: center;
-    background-color: rgb(80, 80, 80);
-    padding: 5px;
-    border-radius: 20px;
-    min-width: 10rem;
-}
-
-img.tileinside {
-    border-radius: 20px;
-}
-
-.visirstylin {
-    background-color: red;
-}
-
 .burger div {
     margin: 3px;
     width: 25px;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 3px;
-    background-color: rgb(80, 80, 80);
+    background-color: #262626;
 }
 
 @media screen and (max-width:1040px) {
     .burger {
         display: block;
     }
-    .heady{
+
+    .links {
         display: none;
     }
 }

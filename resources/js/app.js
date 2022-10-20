@@ -6,7 +6,7 @@ window.navSlide = navSlide;
 function showSearchBar() {
     var x = document.getElementById("searchBar");
     if (x.style.display == "none") {
-        x.style.display = "inline-block"
+        x.style.display = "flex"
     } else {
         x.style.display = "none";
     }
