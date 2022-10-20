@@ -22,10 +22,10 @@
 
 </header>
 
-<div class="bg-neutral-700 text-center phonenu">
-    <div><a onclick="showSearchBar()"><a href="#">Search</a></div>
-    <div><a href="#">Ranking</a></div>
-    <div><a href="#">Submit</a></div>
-    <div><a href="#">Notification</a></div>
-    <div><a href="#">My Page</a></div>
+<div class="text-center mt-5">
+    <div class="phonenu" onclick="showSearchBar()"><a href="#">Search</a></div>
+    <div class="phonenu"><a href="#">Ranking</a></div>
+    <div class="phonenu"><a href="#">Submit</a></div>
+    <div class="phonenu"><a href="#">Notification</a></div>
+    <div class="phonenu"><a href="#">My Page</a></div>
 </div>
