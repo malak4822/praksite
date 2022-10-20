@@ -44,13 +44,13 @@ button:hover {
     background-color: #262626;
 }
 
-.phonenu {
+.secmenuitem {
     padding: 8px;
     cursor: pointer;
     color: white;
 }
 
-.phonenu:hover {
+.secmenuitem:hover {
     color: #262626;
     background-color: white;
 }

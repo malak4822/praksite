@@ -1,9 +1,8 @@
 import './bootstrap';
-window.showSearchBar = showSearchBar;
-window.hideContent = hideContent;
-window.navSlide = navSlide;
+window.hideSearchBar = hideSearchBar;
+window.hideMenu = hideMenu;
 
-function showSearchBar() {
+function hideSearchBar() {
     var x = document.getElementById("searchBar");
     if (x.style.display == "none") {
         x.style.display = "flex"
@@ -12,10 +11,10 @@ function showSearchBar() {
     }
 }
 
-function hideContent() {
-    var x = document.getElementById("visir");
+function hideMenu() {
+    var x = document.getElementById("secmenu");
     if (x.style.display == "none") {
-        x.style.display = "grid"
+        x.style.display = "block"
     } else {
         x.style.display = "none";
     }

@@ -4,7 +4,7 @@
         <button class="logo bg-inherit text-neutral-800 font-bold text-4xl">
             <img src="#" alt="L O G O"></img>
         </button>
-        <button class="links" onclick="showSearchBar()"><a href="#">Search</a></button>
+        <button class="links" onclick="hideSearchBar()"><a href="#">Search</a></button>
         <button class="links"><a href="#">Ranking</a></button>
     </div>
 
@@ -14,7 +14,7 @@
         <button><a href="#">My Page</a></button>
     </div>
 
-    <div onclick="navSlide()" class="burger hidden my-auto cursor-pointer">
+    <div onclick="hideMenu()" class="burger my-auto cursor-pointer">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -22,10 +22,10 @@
 
 </header>
 
-<div class="text-center mt-5">
-    <div class="phonenu" onclick="showSearchBar()"><a href="#">Search</a></div>
-    <div class="phonenu"><a href="#">Ranking</a></div>
-    <div class="phonenu"><a href="#">Submit</a></div>
-    <div class="phonenu"><a href="#">Notification</a></div>
-    <div class="phonenu"><a href="#">My Page</a></div>
+<div class="text-center mt-5 hidden" id="secmenu">
+    <div class="secmenuitem" onclick="hideSearchBar()"><a href="#">Search</a></div>
+    <div class="secmenuitem"><a href="#">Ranking</a></div>
+    <div class="secmenuitem"><a href="#">Submit</a></div>
+    <div class="secmenuitem"><a href="#">Notification</a></div>
+    <div class="secmenuitem"><a href="#">My Page</a></div>
 </div>
