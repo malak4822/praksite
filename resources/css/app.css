@@ -18,16 +18,15 @@ body {
 button {
     margin: 10px;
     border-radius: 9999px;
-    /* background-color: #171717; */
+    background-color: #262626;
     padding: 10px;
-    color: black;
 }
 
-/* 
-li:hover {
+
+button:hover {
     background-color: inherit;
-    color: black;
-} */
+    color: #262626;
+} 
 
 .grid {
     display: grid;
@@ -75,26 +74,11 @@ img.tileinside {
     background-color: rgb(80, 80, 80);
 }
 
-/* 1124 and 980 px */
-
 @media screen and (max-width:1040px) {
-    body {}
-
-    .heady {
-        padding: 10px;
-    }
-
-    .aya {
-        display: none;
-        background-color: red;
-    }
-
     .burger {
         display: block;
-        cursor: pointer;
     }
-}
-
-.nav-active {
-    transform: translateX(0%);
+    .heady{
+        display: none;
+    }
 }
