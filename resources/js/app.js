@@ -19,3 +19,4 @@ function hideMenu() {
         x.style.display = "none";
     }
 }
+// secmenu musi byc none kiedy

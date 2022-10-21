@@ -14,7 +14,7 @@
         <button><a href="#">My Page</a></button>
     </div>
 
-    <div onclick="hideMenu()" class="burger my-auto cursor-pointer">
+    <div onclick="hideMenu()" class="burger hidden my-auto cursor-pointer">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -22,7 +22,7 @@
 
 </header>
 
-<div class="text-center mt-5 hidden" id="secmenu">
+<div class="text-center font" id="secmenu">
     <div class="secmenuitem" onclick="hideSearchBar()"><a href="#">Search</a></div>
     <div class="secmenuitem"><a href="#">Ranking</a></div>
     <div class="secmenuitem"><a href="#">Submit</a></div>

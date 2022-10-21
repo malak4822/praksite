@@ -1,5 +1,5 @@
 <div class="flex justify-center">
-    <div class="mt-10 p-2 border-2 rounded-full hidden" id="searchBar">
+    <div class="mt-10 p-2 border-2 rounded-full" id="searchBar">
 
         <input class="text-center hover:bg-inherit focus:outline-none bg-neutral-900 rounded-full" type="text"
             placeholder="Keywords">

@@ -20,6 +20,8 @@ button {
     padding-left: 20px;
     padding-right: 20px;
     margin: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border-radius: 100px;
     background-color: #262626;
 }
@@ -47,12 +49,13 @@ button:hover {
 .secmenuitem {
     padding: 8px;
     cursor: pointer;
-    color: white;
+    color: #262626;
+    background-color: white;
 }
 
 .secmenuitem:hover {
-    color: #262626;
-    background-color: white;
+    color: white;
+    background-color: #262626;
 }
 
 @media screen and (max-width:1040px) {
@@ -66,5 +69,21 @@ button:hover {
 
     .phonenu {
         display: block;
+    }
+
+    .texty1{
+        margin: 10px;
+        padding: 5px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1040px) {
+    .secmenu{
+        display: none;
+    }
+
+    .secmenuitem{
+        display: none;
     }
 }
