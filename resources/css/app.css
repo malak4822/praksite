@@ -32,7 +32,7 @@ button:hover {
 }
 
 
-.grid {
+.gridi {
     display: grid;
     gap: 0.5em;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
