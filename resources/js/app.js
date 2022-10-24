@@ -26,14 +26,18 @@ function hideMenu() {
 }
 
 function hideContent() {
-    var y = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements")[0];
-    
-    if (y.classList.contains("bordi") == true) {
-        y.classList.remove("bordi");
-    }
-    else {
-        y.classList.add("bordi");
+    var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
+
+    for (var a = 1; a <= 5; ++a) {
+        console.log("a d");
     }
 
-
+    [].forEach.call(entireRest, function (entireRest) {
+        if (entireRest.classList.contains("disnone") == true) {
+            entireRest.classList.remove("disnone");
+        }
+        else {
+            entireRest.classList.add("disnone");
+        }
+    })
 }

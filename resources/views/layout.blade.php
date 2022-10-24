@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body onload="hideSearchBar(), hideMenu()">
+<body onload="hideSearchBar(), hideMenu(), hideContent()">
 
     @include('commonHeader')
     <div class="box">
