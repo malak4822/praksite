@@ -6,6 +6,7 @@ window.hideContent = hideContent;
 
 function hideSearchBar() {
     var x = document.getElementById("searchBar");
+    document.getElementsByClassName("gridi")[0].getElementsByClassName("dw");
     if (x.style.display == "none") {
         x.style.display = "flex"
     } else {
@@ -23,11 +24,8 @@ function hideMenu() {
 }
 
 function hideContent() {
-    var x = document.getElementById("visir");
-    if (x.style.display == "none") {
-        x.style.display = "block"
-    } else {
-        x.style.display = "none";
-    }
+    var y = document.getElementsByClassName("nextfivelements")[0];
+    y.classList.add("bordi");
 }
+
 // secmenu musi byc none kiedy
