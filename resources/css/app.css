@@ -71,7 +71,7 @@ button:hover {
         display: block;
     }
 
-    .texty1{
+    .texty1 {
         margin: 10px;
         padding: 5px;
         font-size: 18px;
@@ -79,15 +79,15 @@ button:hover {
 }
 
 @media screen and (min-width:1040px) {
-    .secmenu{
+    .secmenu {
         display: none;
     }
 
-    .secmenuitem{
+    .secmenuitem {
         display: none;
     }
 }
 
 .bordi {
-    border: #d90000 2px solid;
+    display: none;
 }
