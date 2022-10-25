@@ -89,5 +89,5 @@ button:hover {
 }
 
 .disnone {
-    border: red 13px solid;
+    display: block;
 }

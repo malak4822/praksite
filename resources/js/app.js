@@ -25,21 +25,32 @@ function hideMenu() {
     }
 }
 
+var i = 0;
 function hideContent() {
+
     var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
 
-    for (var i = 0; i < 5; ++i) {
-        entireRest[i].classList.add("disnone");
+    if (i == 10) {
+        while (i < 13) {
+            ++i;
+            entireRest[i].classList.add("disnone");
+        }
+    }
+    else if (i == 5) {
+        while (i < 10) {
+            ++i;
+            entireRest[i].classList.add("disnone");
+        }
+    }
+    else if (i == 0) {
+        while (i < 5) {
+            ++i;
+            entireRest[i].classList.add("disnone");
+        }
     }
 
-    
     // IF DISSAPEARING IS TRUE GO FALSE AND OTHER WAY
-    // if (entireRest.classList.contains("disnone") == true) {
-    //     entireRest.classList.remove("disnone");
-    // }
-    // else {
-    //     entireRest.classList.add("disnone");
-    // }
+
 
     //             SHOWING EVERY RECORD
     // [].forEach.call(entireRest, function (entireRest) {
