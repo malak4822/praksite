@@ -7,12 +7,12 @@
     ?>
 
     {{-- 5 FIRST GUYS --}}
-    @foreach ($five as $guy_infive)
+    {{-- @foreach ($five as $guy_infive)
         <div class="text-center bg-white text-neutral-800 p-1 rounded-3xl">
             <img class='rounded-3xl' src={{ $guy_infive->thumbnailURL }}></img>
             {{ $guy_infive->submitted_by }} {{ $guy_infive->author }}
         </div>
-    @endforeach
+    @endforeach --}}
     {{-- REST OF GUYS --}}
     @foreach ($rest as $rest_guy)
         <div class="nextfivelements text-center bg-white text-neutral-800 p-1 rounded-3xl">
@@ -23,5 +23,5 @@
 </div>
 
 <div class="rounded-b-3xl  bg-neutral-700 w-4/5 text-end mx-auto">
-    <button onclick="hideContent()" class="bg-white text-neutral-800 m-5 hover:text-white">See more</button>
+    <button onclick="hideContent()" class="bg-white text-neutral-800 m-5 hover:text-white">See 5 more</button>
 </div>
