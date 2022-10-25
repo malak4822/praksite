@@ -26,38 +26,49 @@ function hideMenu() {
 }
 
 var i = 0;
+var timesClicked = 1;
 function hideContent() {
 
     var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
 
-// pokazywane elementy + 5
 
-    if (i == 10) {
-        while (i < 16) {
-            if (i == entireRest.length) { break; }
-            ++i;
+    if (entireRest.length / (5 * timesClicked) < 1) {
+
+        var a = entireRest.length - ((5 * timesClicked) - 5)
+
+        console.log("reszta to " + a);
+
+        if (a == 4) {
+            entireRest[i].classList.add("disnone");
+            entireRest[i].classList.add("disnone");
+            entireRest[i].classList.add("disnone");
+            entireRest[i].classList.add("disnone");
+        } else if (a == 3) {
+            entireRest[i].classList.add("disnone");
+            entireRest[i].classList.add("disnone");
             entireRest[i].classList.add("disnone");
         }
-    }
-    else if (i == 5) {
-        while (i < 10) {
-            if (i == entireRest.length) { break; }
-            ++i;
+        else if (a == 2) {
+            entireRest[i].classList.add("disnone");
             entireRest[i].classList.add("disnone");
         }
-    }
-    else if (i == 0) {
-        while (i < 5) {
-            if (i == entireRest.length) { break; }
-            ++i;
+        else {
             entireRest[i].classList.add("disnone");
         }
+
+    }
+    else {
+        entireRest[i].classList.add("disnone");
+        ++i;
+        entireRest[i].classList.add("disnone");
+        ++i;
+        entireRest[i].classList.add("disnone");
+        ++i;
+        entireRest[i].classList.add("disnone");
+        ++i;
+        entireRest[i].classList.add("disnone");
+        ++i;
     }
 
-    // IF DISSAPEARING IS TRUE GO FALSE AND OTHER WAY
-
-
-    //             SHOWING EVERY RECORD
-    // [].forEach.call(entireRest, function (entireRest) {
-    // })
+    ++timesClicked;
 }
