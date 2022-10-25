@@ -28,16 +28,20 @@ function hideMenu() {
 function hideContent() {
     var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
 
-    for (var a = 1; a <= 5; ++a) {
-        console.log("a d");
+    for (var i = 0; i < 5; ++i) {
+        entireRest[i].classList.add("disnone");
     }
 
-    [].forEach.call(entireRest, function (entireRest) {
-        if (entireRest.classList.contains("disnone") == true) {
-            entireRest.classList.remove("disnone");
-        }
-        else {
-            entireRest.classList.add("disnone");
-        }
-    })
+    
+    // IF DISSAPEARING IS TRUE GO FALSE AND OTHER WAY
+    // if (entireRest.classList.contains("disnone") == true) {
+    //     entireRest.classList.remove("disnone");
+    // }
+    // else {
+    //     entireRest.classList.add("disnone");
+    // }
+
+    //             SHOWING EVERY RECORD
+    // [].forEach.call(entireRest, function (entireRest) {
+    // })
 }
