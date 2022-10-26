@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Ludzie;
 use App\Http\Controllers\MyController;
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +13,13 @@ use App\Http\Controllers\MyController;
 |
 */
 
-Route::get("/user/{id}", function ($id) {
-    return view("users", []);
+Route::get("/event/{id}", function ($id) {
+    return view('wydarzenie', [
+        'eventId' => $id,
+    ]);
 });
 
 Route::get("/", [
-
     MyController::class, "enterHome",
     "dwdw" => 2,
 ]);

@@ -1,0 +1,1 @@
+Nr wydarzenia to {{$eventId}}

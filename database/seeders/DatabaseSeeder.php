@@ -38,12 +38,6 @@ class DatabaseSeeder extends Seeder
             'submitted_by' => "submitted by",
         ]);
 
-        //                  4
-        DB::table('thumbnailContent')->insert([
-            'author' => fake()->name(),
-            'thumbnailURL' => fake()->imageUrl(), // password
-            'submitted_by' => "submitted by",
-        ]);
 
 
         // \App\Models\User::factory()->create([
