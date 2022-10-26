@@ -25,49 +25,33 @@ function hideMenu() {
     }
 }
 
-var i = 0;
+var h = 0;
 var timesClicked = 1;
 function hideContent() {
-
+    var d = 0;
     var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
 
 
-    if (entireRest.length / (5 * timesClicked) < 1) {
+    if (entireRest.length < 5 * timesClicked) {
 
         var a = entireRest.length - ((5 * timesClicked) - 5)
 
         console.log("reszta to " + a);
+        console.log(d);
 
-        if (a == 4) {
-            entireRest[i].classList.add("disnone");
-            entireRest[i].classList.add("disnone");
-            entireRest[i].classList.add("disnone");
-            entireRest[i].classList.add("disnone");
-        } else if (a == 3) {
-            entireRest[i].classList.add("disnone");
-            entireRest[i].classList.add("disnone");
-            entireRest[i].classList.add("disnone");
-        }
-        else if (a == 2) {
-            entireRest[i].classList.add("disnone");
-            entireRest[i].classList.add("disnone");
-        }
-        else {
-            entireRest[i].classList.add("disnone");
+        while (a >= d) {
+            console.log("esa");
+            ++d;
+            entireRest[a].classList.add("disnone");
         }
 
     }
     else {
-        entireRest[i].classList.add("disnone");
-        ++i;
-        entireRest[i].classList.add("disnone");
-        ++i;
-        entireRest[i].classList.add("disnone");
-        ++i;
-        entireRest[i].classList.add("disnone");
-        ++i;
-        entireRest[i].classList.add("disnone");
-        ++i;
+
+        for (var hend = h + 5; h < hend; ++h) {
+            entireRest[h].classList.add("disnone");
+        }
+
     }
 
     ++timesClicked;
