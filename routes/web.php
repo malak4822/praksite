@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,13 +14,18 @@ use App\Http\Controllers\MyController;
 |
 */
 
+
+
 Route::get("/event/{id}", function ($id) {
+
+    $all = DB::table('thumbnailContent')->get();
+
     return view('wydarzenie', [
         'eventId' => $id,
+        'all' => $all,
     ]);
 });
 
 Route::get("/", [
     MyController::class, "enterHome",
-    "dwdw" => 2,
 ]);
