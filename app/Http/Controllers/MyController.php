@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 
+
 class MyController extends Controller
 {
 
     public static function enterHome()
     {
-        // WYŚWIETLANIE KOLUMN KOLUMN KOLUMN 
-        $kolumnauthora = DB::table('thumbnailContent')->pluck('author');
+        $all = DB::table('thumbnailContent')->get();
 
         return (view("layout", [
-            "kolumnas" => $kolumnauthora,
+            "all" => $all,
         ])
         );
     }

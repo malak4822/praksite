@@ -1,7 +1,7 @@
 <div class="w-4/5 gridi mx-auto bg-neutral-700 rounded-t-3xl p-5">
 
     <?php
-    $all = DB::table('thumbnailContent')->get();
+
     $five = $all->take(5);
     $rest = $all->skip(5);
     ?>
@@ -25,7 +25,9 @@
 </div>
 
 <div class="rounded-b-3xl  bg-neutral-700 w-4/5 text-end mx-auto">
-    <button onclick="hideContent()" class="bg-white text-neutral-800 m-5 hover:text-white">See 5 more</button>
+    <button onclick="hideContent()" class="bg-white text-neutral-800 m-5 hover:text-white">
+        <p class="change">See 5 more</p>
+    </button>
 </div>
 
 <script>
