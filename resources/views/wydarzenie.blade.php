@@ -9,19 +9,19 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
+<?php
+$all->find($eventId);
+?>
 
-    Nr wydarzenia to {{ $eventId }}
+<body class="text-center">
+    <div>
+        Nr wydarzenia to {{ $eventId }}
+    </div>
 
-
-    if id ($eventID)
-    @foreach ($all as $guy_infive)
-        @if ($id == $eventID)
-            <div class="text-center text-neutral-800 p-1 rounded-3xl">
-                {{ $guy_infive->submitted_by }} {{ $guy_infive->author }}
-            </div>
-            @elseif
-        @endforeach
+    <div>
+        {{ $all->value('author') }}
+        <img class="mx-auto rounded-3xl h-40 border-2" src="{{ $all->value('thumbnailURL') }}"></img>
+    </div>
 </body>
 
 </html>

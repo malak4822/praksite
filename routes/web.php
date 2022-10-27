@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\DB;
 
 Route::get("/event/{id}", function ($id) {
 
-    $all = DB::table('thumbnailContent')->get();
+    $all = DB::table('thumbnailContent');
 
     return view('wydarzenie', [
         'eventId' => $id,
