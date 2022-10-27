@@ -20,7 +20,7 @@ Route::get("/event/{id}", function ($id) {
 
     $all = DB::table('thumbnailContent');
 
-    return view('wydarzenie', [
+    return view('events', [
         'eventId' => $id,
         'all' => $all,
     ]);

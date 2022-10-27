@@ -91,3 +91,7 @@ button:hover {
 .disnone {
     display: block;
 }
+
+.hide {
+    display: none;
+}

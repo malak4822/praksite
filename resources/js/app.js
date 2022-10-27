@@ -1,8 +1,7 @@
 import './bootstrap';
 window.hideSearchBar = hideSearchBar;
 window.hideMenu = hideMenu;
-window.hideContent = hideContent;
-
+window.showContent = showContent;
 
 function hideSearchBar() {
     var x = document.getElementById("searchBar");
@@ -28,13 +27,25 @@ function hideMenu() {
 var timesClicked = 0;
 var i = 0;
 var h = 0;
-function hideContent() {
+
+var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
+var changingText = document.getElementsByClassName("chText")[0].getElementsByClassName("changingText")[0];
+
+function showContent() {
+
+    var showMore = changingText.getElementsByClassName("showMore");
+    var showLess = changingText.getElementsByClassName("showLess");
+
+    showMore[0].classList.add("hide");
+
+    console.log("więcej : ");
+    console.log(showMore);
+    console.log("mniej : ");
+    console.log(showLess);
+
     ++timesClicked;
 
-    var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
-
     if (entireRest.length / 5 < timesClicked) {
-
         var amountOfRestTiles = entireRest.length - ((5 * timesClicked) - 5)
         var lastTileNumber = entireRest.length - amountOfRestTiles;
 
@@ -48,7 +59,6 @@ function hideContent() {
         console.log("numer ostatniego kafla : " + lastTileNumber);
     }
     else {
-
         for (var hend = h + 5; h < hend; ++h) {
             entireRest[h].classList.add("disnone");
         }

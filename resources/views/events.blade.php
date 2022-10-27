@@ -20,7 +20,7 @@ $all->find($eventId);
 
     <div>
         {{ $all->value('author') }}
-        <img class="mx-auto rounded-3xl h-40 border-2" src="{{ $all->value('thumbnailURL') }}"></img>
+        <img class="mx-auto rounded-3xl h-64 border-2" src="{{ $all->value('thumbnailURL') }}"></img>
     </div>
 </body>
 
