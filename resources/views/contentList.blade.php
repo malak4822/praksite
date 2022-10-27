@@ -28,6 +28,6 @@
 <div class="chText rounded-b-3xl  bg-neutral-700 w-4/5 text-end mx-auto">
     <button onclick="showContent()" class="changingText bg-white przycisk text-neutral-800 m-5 hover:text-white">
         <p class="showMore" name="esa">Show More</p>
-        <p class="showLess">Show Less</p>
+        <p class="showLess hidden">Show Less</p>
     </button>
 </div>

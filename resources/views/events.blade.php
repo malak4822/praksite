@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wydarzenia</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
 </head>
 
 <?php
@@ -19,7 +19,7 @@ $all->find($eventId);
     </div>
 
     <div>
-        {{ $all->value('author') }}
+        <p> Autor to  {{ $all->value('author') }} </p>
         <img class="mx-auto rounded-3xl h-64 border-2" src="{{ $all->value('thumbnailURL') }}"></img>
     </div>
 </body>

@@ -32,21 +32,17 @@ var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassN
 var changingText = document.getElementsByClassName("chText")[0].getElementsByClassName("changingText")[0];
 
 function showContent() {
+    ++timesClicked;
 
     var showMore = changingText.getElementsByClassName("showMore");
     var showLess = changingText.getElementsByClassName("showLess");
 
-    showMore[0].classList.add("hide");
+    if (amountOfRestTiles + entireRest.length / (timesClicked * 5) == entireRest.length) {
+        console.log("dzuiala");
+    }
 
-    console.log("więcej : ");
-    console.log(showMore);
-    console.log("mniej : ");
-    console.log(showLess);
-
-    ++timesClicked;
-
-    if (entireRest.length / 5 < timesClicked) {
-        var amountOfRestTiles = entireRest.length - ((5 * timesClicked) - 5)
+    else if (entireRest.length / (timesClicked * 5) < 1) {
+        var amountOfRestTiles = entireRest.length - ((5 * timesClicked) - 5);
         var lastTileNumber = entireRest.length - amountOfRestTiles;
 
         while (amountOfRestTiles > i) {
