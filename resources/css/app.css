@@ -88,10 +88,10 @@ button:hover {
     }
 }
 
-.disnone {
+.disblock {
     display: block;
 }
 
-.hide {
+.disnone {
     display: none;
 }

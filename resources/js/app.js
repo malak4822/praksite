@@ -25,38 +25,38 @@ function hideMenu() {
 }
 
 var timesClicked = 0;
-var i = 0;
 var h = 0;
-
 var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
 var changingText = document.getElementsByClassName("chText")[0].getElementsByClassName("changingText")[0];
 
 function showContent() {
     ++timesClicked;
 
-    var showMore = changingText.getElementsByClassName("showMore");
-    var showLess = changingText.getElementsByClassName("showLess");
+    var showMore = changingText.getElementsByClassName("showMore")[0];
+    var showLess = changingText.getElementsByClassName("showLess")[0];
 
-    if (amountOfRestTiles + entireRest.length / (timesClicked * 5) == entireRest.length) {
-        console.log("dzuiala");
-    }
+    if (entireRest.length / (timesClicked * 5) < 1) {
 
-    else if (entireRest.length / (timesClicked * 5) < 1) {
         var amountOfRestTiles = entireRest.length - ((5 * timesClicked) - 5);
-        var lastTileNumber = entireRest.length - amountOfRestTiles;
+        var lastTileNumber = ((5 * timesClicked) - 5);
 
-        while (amountOfRestTiles > i) {
-            entireRest[lastTileNumber].classList.add("disnone");
-            ++lastTileNumber;
-            ++i;
+        showMore.classList.add("disnone")
+        showLess.classList.add("disblock")
+
+        if (timesClicked * 5 + amountOfRestTiles == entireRest.length) {
+            console.log("tak");
         }
-        console.log("wszystkie elementy : " + entireRest.length);
-        console.log("ilość zostałych kafelków : " + amountOfRestTiles);
-        console.log("numer ostatniego kafla : " + lastTileNumber);
+        else {
+            console.log("nie");
+            for (var i = 0; amountOfRestTiles > i; ++i) {
+                entireRest[lastTileNumber].classList.add("disblock");
+                ++lastTileNumber;
+            }
+        }
     }
     else {
         for (var hend = h + 5; h < hend; ++h) {
-            entireRest[h].classList.add("disnone");
+            entireRest[h].classList.add("disblock");
         }
     }
 }
