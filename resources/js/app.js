@@ -24,12 +24,14 @@ function hideMenu() {
     }
 }
 
-var timesClicked = 0;
-var h = 0;
-var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
-var changingText = document.getElementsByClassName("chText")[0].getElementsByClassName("changingText")[0];
+
 
 function showContent() {
+    var timesClicked = 0;
+    var h = 0;
+    var entireRest = document.getElementsByClassName("gridi")[0].getElementsByClassName("nextfivelements");
+    var changingText = document.getElementsByClassName("chText")[0].getElementsByClassName("changingText")[0];
+
     ++timesClicked;
 
     var showMore = changingText.getElementsByClassName("showMore")[0];
