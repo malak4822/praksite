@@ -15,8 +15,6 @@ use Illuminate\Http\Request;
 |
 */
 
-
-
 Route::post("/event/{id}", function (Request $request, $id) {
 
     $name = $request->input('nameVal');
@@ -26,17 +24,14 @@ Route::post("/event/{id}", function (Request $request, $id) {
         'name' => $name,
         'commentVal' => $comm,
     ]);
-    $all = DB::table('thumbnailContent');
 
-    return view('events', [
-        'eventId' => $id,
-        'all' => $all,
-    ]);
+    return redirect('/event/' . $id);
 });
 
 Route::get("/", [
     MyController::class, "enterHome",
 ]);
+
 
 Route::get("/event/{id}", function ($id) {
 

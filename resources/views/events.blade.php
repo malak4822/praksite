@@ -11,7 +11,7 @@
 
 <?php
 $all->find($eventId);
-
+$allComents = DB::table('comments')->get();
 ?>
 
 <body class="text-center">
@@ -40,6 +40,12 @@ $all->find($eventId);
                 <button type="submit"
                     class=" p-5 hover:text-white ml-2 text-neutral-900 bg-white rounded-full">Add</button>
             </form>
+            @foreach ($allComents as $comment)
+                <div>
+                    {{ $comment->name }} napisał :
+                    {{ $comment->commentVal }}
+                </div>
+            @endforeach
         </div>
     </div>
 
