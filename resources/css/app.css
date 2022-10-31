@@ -93,5 +93,5 @@ button:hover {
 }
 
 .disnone {
-    display: none;
+    display: block;
 }

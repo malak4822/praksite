@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,8 +17,15 @@ use Illuminate\Support\Facades\DB;
 
 
 
-Route::get("/event/{id}", function ($id) {
+Route::post("/event/{id}", function (Request $request, $id) {
 
+    $name = $request->input('nameVal');
+    $comm = $request->input('commVal');
+
+    DB::table('comments')->insert([
+        'name' => $name,
+        'commentVal' => $comm,
+    ]);
     $all = DB::table('thumbnailContent');
 
     return view('events', [
@@ -29,3 +37,13 @@ Route::get("/event/{id}", function ($id) {
 Route::get("/", [
     MyController::class, "enterHome",
 ]);
+
+Route::get("/event/{id}", function ($id) {
+
+    $all = DB::table('thumbnailContent');
+
+    return view('events', [
+        'eventId' => $id,
+        'all' => $all,
+    ]);
+});

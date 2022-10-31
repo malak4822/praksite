@@ -11,7 +11,7 @@
 
 <?php
 $all->find($eventId);
-// DB::table('student_details')->insert($data);
+
 ?>
 
 <body class="text-center">
@@ -26,18 +26,19 @@ $all->find($eventId);
 
     <div class="flex justify-center">
         <div class="mt-10 border-2 rounded-full">
-            <form method="post">
 
+            <form method="post" action="">
+                @csrf
                 <input
                     class="w-1/5 text-center p-5 border-2 hover:bg-inherit focus:outline-none bg-neutral-900 rounded-full"
-                    type="text" placeholder="Name"></input>
+                    type="text" placeholder="Name" name="nameVal"></input>
 
                 <input
                     class="w-3/5 p-5 border-2 text-center hover:bg-inherit focus:outline-none bg-neutral-900 rounded-full"
-                    type="text" placeholder="Comment Text"></input>
+                    type="text" placeholder="Comment Text" name="commVal"></input>
 
-                <button class=" p-5 hover:text-white ml-2 text-neutral-900 bg-white rounded-full">Add</button>
-
+                <button type="submit"
+                    class=" p-5 hover:text-white ml-2 text-neutral-900 bg-white rounded-full">Add</button>
             </form>
         </div>
     </div>
