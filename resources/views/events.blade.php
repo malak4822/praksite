@@ -11,7 +11,9 @@
 
 <?php
 $all->find($eventId);
-$allComents = DB::table('comments')->get();
+$allComents = DB::table('comments')
+    ->where('eventId', '=', $eventId)
+    ->get();
 ?>
 
 <body class="text-center">
@@ -40,12 +42,17 @@ $allComents = DB::table('comments')->get();
                 <button type="submit"
                     class=" p-5 hover:text-white ml-2 text-neutral-900 bg-white rounded-full">Add</button>
             </form>
-            @foreach ($allComents as $comment)
-                <div>
-                    {{ $comment->name }} napisał :
-                    {{ $comment->commentVal }}
-                </div>
-            @endforeach
+            @unless(count($allComents) == 0)
+                @foreach ($allComents as $comment)
+                    <div>
+                        {{ $comment->nameVal }}
+                        <p> napisał : </p>
+                        {{ $comment->commVal }}
+                    </div>
+                @endforeach
+            @else
+                <p> Brak komentarzy </p>
+            @endunless
         </div>
     </div>
 

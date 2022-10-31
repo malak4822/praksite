@@ -21,8 +21,9 @@ Route::post("/event/{id}", function (Request $request, $id) {
     $comm = $request->input('commVal');
 
     DB::table('comments')->insert([
-        'name' => $name,
-        'commentVal' => $comm,
+        'eventId' => $id,
+        'nameVal' => $name,
+        'commVal' => $comm,
     ]);
 
     return redirect('/event/' . $id);
