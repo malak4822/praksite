@@ -2,7 +2,7 @@
 
     <div class="flex">
         <button class="logo bg-inherit text-neutral-800 font-bold text-4xl">
-            <img src="#" alt="L O G O"></img>
+            <img src="" alt="L O G O">
         </button>
         <button class="links" onclick="hideSearchBar()"><a href="#">Search</a></button>
         <button class="links"><a href="#">Ranking</a></button>
