@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="44" alt="Laravel Logo"></a> Praksite
+# <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="88" alt="Laravel Logo"></a> Praksite
 
 ## Description
 
